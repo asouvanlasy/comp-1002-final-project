@@ -1,0 +1,189 @@
+/**************************
+Global styling starts here
+**************************/
+
+/* Set all font */
+* {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 700;
+}
+
+/* Remove margin */
+body {
+    margin: 0px;
+}
+
+/* Header/top navigation */
+.topnav {
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    align-items: center;
+}
+
+/* Set the right-aligned nav to not stick against the logo */
+.topnav-left {
+    flex-grow: 1;
+}
+
+/* Adjust logo size */
+.topnav-left img {
+    height: 100%;
+    width: 350px;
+}
+
+/* Set ul to be side-by-side instead of a list */
+.topnav-right ul {
+    display: flex; 
+    list-style: none;
+}
+
+/* Style all links in topnav */
+a {
+    float: left;
+    color: rgb(136, 133, 133);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+a:hover {
+    background-color: red;
+    color: white;
+}
+
+/***** Footer *****/
+footer {
+    background-color: rgb(110, 110, 110);
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+/**************************
+Global styling ends here
+**************************/
+
+/* Full screen background image and align text box */
+.masthead {
+    background-image: url("../media/masthead.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    /* Center-left alignment */
+    display: flex;
+    align-items: center;
+}
+
+/* Adjust size, color and position of text box */
+.masthead div {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 70px;
+    color: white;
+    margin-left: 50px;
+}
+
+/* Change masthead text size */
+.masthead h1 {
+    font-size: 2.5em;
+}
+
+/* Change masthead text size */
+.masthead h2 {
+    font-size: 2em;
+}
+
+/* Layout first row of content */
+.row-one {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    padding: 5% 10%;
+    font-size: 30px;
+}
+
+/* Space out the text and image */
+.row-one > div {
+    padding: 15px;
+}
+
+/* Adjust image size */
+.row-one img {
+    height: 100%;
+    width: 800px;
+}
+
+/* Set link colors */
+.row-one a {
+    background-color: #ddd;
+    color:  black;
+}
+
+/* Set link colors on hover */
+.row-one a:hover {
+    background-color: red;
+    color: white;
+}
+
+/*****************
+Responsive styling
+******************/
+
+@media screen and (max-width: 1200px){
+    .topnav {
+        flex-direction: column;
+    }
+
+    .masthead {
+        justify-content: center;
+    }
+
+    .row-one {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .row-one > div > img {
+        width: 100%;
+        height: auto;
+    }
+
+    .row-one a {
+        font-size: 0.7em;
+        padding: 6px 12px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .masthead > div {
+        padding: 50px;
+        font-size: 1.2em;
+    }
+
+    .row-one {
+        font-size: 1.2em;
+    }
+}
+@media screen and (max-width: 600px){
+    .masthead > div {
+        padding: 40px;
+        font-size: 1em;
+    }
+
+    .row-one {
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 480px){
+    .masthead {
+        padding: 20px;
+        font-size: 0.8em;
+    }
+    
+    .row-one {
+        font-size: 0.8em;
+    }
+}

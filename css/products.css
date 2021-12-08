@@ -1,0 +1,182 @@
+/**************************
+Global styling starts here
+**************************/
+
+/* Set all font */
+* {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 700;
+}
+
+/* Remove margin */
+body {
+    margin: 0px;
+}
+
+/* Header/top navigation */
+.topnav {
+    padding-left: 100px;
+    padding-right: 100px;
+    display: flex;
+    align-items: center;
+}
+
+/* Set the right-aligned nav to not stick against the logo */
+.topnav-left {
+    flex-grow: 1;
+}
+
+/* Adjust logo size */
+.topnav-left img {
+    height: 100%;
+    width: 350px;
+}
+
+/* Set ul to be side-by-side instead of a list */
+.topnav-right ul {
+    display: flex; 
+    list-style: none;
+}
+
+/* Style all links in topnav */
+a {
+    float: left;
+    color: rgb(136, 133, 133);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+a:hover {
+    background-color: red;
+    color: white;
+}
+
+/***** Footer *****/
+footer {
+    background-color: rgb(110, 110, 110);
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+/**************************
+Global styling ends here
+**************************/
+
+
+
+
+/* Rows styling */
+.row-one, .row-two, .row-three {
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    padding: 0% 10%;
+}
+
+/* Adjust font sizes */
+main h1 {
+    font-size: 3em;
+}
+main p {
+    font-size: 1.5em;
+}
+main figcaption {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+/* Space out the text and image */
+.row-one div, .row-two div, .row-three div {
+    padding: 15px;
+}
+
+/* Adjust image size */
+.row-one img, .row-two img, .row-three img {
+    height: 100%;
+    width: 500px;
+}
+
+/* Space out last row and footer */
+.row-three div {
+    margin-bottom: 70px;
+}
+
+/* Set link colors */
+main a {
+    background-color: #ddd;
+    color:  black;
+}
+
+/* Set link colors on hover */
+main a:hover {
+    background-color: red;
+    color: white;
+}
+
+/* Change caption text color */
+figcaption {
+    color: gray;
+}
+
+
+
+
+/******************
+Responsive styling
+******************/
+
+@media screen and (max-width: 1200px){
+    .topnav {
+        flex-direction: column;
+    }
+
+    .row-one, .row-two, .row-three {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #img1 {
+        width: 60%;
+        height: auto;
+    }
+    
+    #img2 {
+        width: 100%;
+        height: auto;
+    }
+
+    .row-two img, .row-three img {
+        width: 60%;
+        height: auto;
+    }
+    
+    .row-one a, .row-two a, .row-three a {
+        font-size: 1em;
+        padding: 6px 12px;
+    }
+
+    figcaption {
+        font-size: 0.7em;
+        color: gray;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .row-one, .row-two, .row-three {
+        font-size: 1.2em;
+    }
+}
+@media screen and (max-width: 600px){
+    .row-one, .row-two, .row-three {
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 480px){
+    .row-one, .row-two, .row-three {
+        font-size: 0.8em;
+    }
+}
